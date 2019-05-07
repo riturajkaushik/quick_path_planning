@@ -12,3 +12,5 @@
     path = planner.plan(start, goal)
  ```
     -  Path planning can also be visualised
+
+![A star planning visualization: ](./animation.gif?raw=true "A star planning visualization")
