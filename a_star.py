@@ -1,5 +1,3 @@
-import matplotlib.pyplot as plt
-import math
 import numpy as np
 
 class Node:
@@ -192,6 +190,7 @@ def view_planning():
     planner = A_star(obstacles, boundary, resolution=0.8)
     start, goal = [-7,0], [7,5]
     path = planner.plan(start, goal)
+    print ("Planned path: ", path)
     all_nodes = planner.get_all_nodes()
 
     plt.plot([d[0] for d in planner.obstacles], [d[1] for d in planner.obstacles], 'Dk')
